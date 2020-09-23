@@ -1,0 +1,37 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.22]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>MemoryStream:&nbsp;ReadByte</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>MemoryStream:&nbsp;ReadByte</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>ReadByte</H1>
+<P>
+ Reads a single byte from the stream.
+
+<PRE class=syntax><B><font class="keyword">&nbsp;Public</font><font class="keyword">&nbsp;Function</font><font class="identifier">&nbsp;ReadByte</font>&nbsp;(&nbsp;)<font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Long</font></B></PRE>
+<H4>Return Values</H4>
+<B>Long</B>&nbsp;-&nbsp; The byte value from the current position in the stream.
+ 
+<H4>Remarks</H4>
+<P> <p>The stream must be open for read from it, otherwise an exception will be thrown.</p>
+ <p>If the end of the stream is reached during a read, then a value of
+ -1 is returned.</p>
+ <p>Each read from the stream will advance the position one byte.</p>
+</P>
+<H4>See Also</H4>
+<P>
+<A HREF="MemoryStream.html">Class MemoryStream Overview</A>
+<DIV class=footer>Build on Thursday, February 10, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

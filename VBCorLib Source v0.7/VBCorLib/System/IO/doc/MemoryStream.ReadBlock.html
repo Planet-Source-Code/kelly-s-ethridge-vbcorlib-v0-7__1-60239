@@ -1,0 +1,65 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.22]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>MemoryStream:&nbsp;ReadBlock</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>MemoryStream:&nbsp;ReadBlock</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>ReadBlock</H1>
+<P>
+ Reads a specifiec number of bytes from the stream.
+
+<PRE class=syntax><B><font class="keyword">&nbsp;Public</font><font class="keyword">&nbsp;Function</font><font class="identifier">&nbsp;ReadBlock</font>(
+	&nbsp;<font class="keyword">&nbsp;ByRef</font><font class="identifier">&nbsp;Bytes</font>&nbsp;(&nbsp;)<font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Byte</font>,
+	&nbsp;<font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;Offset</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Long</font>,
+	&nbsp;<font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;Count</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Long</font>&nbsp;)<font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Long</font></B></PRE>
+<H4>Parameters</H4>
+<DL>
+<DT><I>Bytes</I></TD>
+<DD>
+[ByRef]
+ <B>Byte</B>.
+  The destination for the bytes to be read from the stream.
+ 
+</DD>
+<DT><I>Offset</I></TD>
+<DD>
+[ByVal]
+ <B>Long</B>.
+  The startind index in <i>buffer</i> to begin storing the bytes read from the stream.
+ 
+</DD>
+<DT><I>Count</I></TD>
+<DD>
+[ByVal]
+ <B>Long</B>.
+  The maximum number of bytes to be read from the stream.
+ 
+</DD>
+</DL>
+<H4>Return Values</H4>
+<B>Long</B>&nbsp;-&nbsp; The total number of bytes read from the stream.
+ 
+<H4>Remarks</H4>
+<P> <p>If Offset plus Count exceeds the end of <i>Buffer</i> then an exception will be thrown.
+ If the current position in the stream is closer to the end than Count bytes, then only the
+ remaining bytes will be read.</p>
+ <p>The stream must be open to read from it, otherwise an exception will be thrown.</p>
+ <p>After reading from the stream, the current position will advance the number of byte as returend.</p>
+</P>
+<H4>See Also</H4>
+<P>
+<A HREF="MemoryStream.html">Class MemoryStream Overview</A>
+<DIV class=footer>Build on Thursday, February 10, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

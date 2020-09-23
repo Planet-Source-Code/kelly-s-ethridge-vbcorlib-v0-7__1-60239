@@ -1,0 +1,51 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.23]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>Calendar:&nbsp;CalendarWeekRule</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>Calendar:&nbsp;CalendarWeekRule</TD></TR>
+</TABLE>
+<!-- ============ ENUM ENTRY ============ -->
+<H1>CalendarWeekRule</H1>
+<P>
+ Inidicates how many days of the beginning of January must
+ the first week contain in order to be counted as the first week.
+
+<PRE class=syntax><B><font class="keyword">&nbsp;Public</font><font class="keyword">&nbsp;Enum</font><font class="identifier">&nbsp;CalendarWeekRule</font></B></PRE>
+<H4>Values</H4>
+<DL>
+<DT><I>FirstDay</I></TD>
+<DD> The first defined week that contains the first day of
+ January is considered the first week of the year.
+ </DD>
+<DT><I>FirstFullWeek</I></TD>
+<DD> The first defined week that contains 7 days of
+ January is considered the first week of the year.
+ </DD>
+<DT><I>FirstFourDayWeek</I></TD>
+<DD> The first defined week that contains the first
+ 4 days of January is considered the first week of the year.
+ </DD>
+</DL>
+<H4>Remarks</H4>
+<P> When a full week of 7 days from January is required, the week
+ may not contain January 1st to 6th, since up to the first 6 days of
+ January may exist in the same week and the week would not have 7 days
+ from January in it as it may contain parts of the previous December.
+ Those days would not count towards the number of weeks in the year.
+</P>
+<H4>See Also</H4>
+<P>
+<A HREF="Calendar.html">Class Calendar Overview</A>
+<DIV class=footer>Build on Saturday, April 23, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

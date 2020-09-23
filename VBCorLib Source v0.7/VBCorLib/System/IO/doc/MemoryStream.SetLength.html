@@ -1,0 +1,47 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.22]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>MemoryStream:&nbsp;SetLength</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>MemoryStream:&nbsp;SetLength</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>SetLength</H1>
+<P>
+ Sets the current length of the stream.
+
+<PRE class=syntax><B><font class="keyword">&nbsp;Public</font><font class="keyword">&nbsp;Sub</font><font class="identifier">&nbsp;SetLength</font>(
+	&nbsp;<font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;value</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Currency</font>&nbsp;)</B></PRE>
+<H4>Parameters</H4>
+<DL>
+<DT><I>value</I></TD>
+<DD>
+[ByVal]
+ <B>Currency</B>.
+  The size of the stream in bytes.
+ 
+</DD>
+</DL>
+<H4>Remarks</H4>
+<P> <p>The shortening the length of the stream will truncate the excess data. If
+ increasing the length, then the new exposed data will be set to zero.</p>
+ <p>If a user-supplied byte array is being used, this function has limited capabilites.
+ The size of the stream can be changed to withing the origin size of the user-supplied
+ byte array. If a length greater than the original array size is set, then an exception
+ is thrown.</p>
+</P>
+<H4>See Also</H4>
+<P>
+<A HREF="MemoryStream.html">Class MemoryStream Overview</A>
+<DIV class=footer>Build on Thursday, February 10, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

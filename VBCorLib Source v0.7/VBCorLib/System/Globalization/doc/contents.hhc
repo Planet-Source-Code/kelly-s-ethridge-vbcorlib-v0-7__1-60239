@@ -1,0 +1,196 @@
+<!doctype html public "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.23]" >
+<!-- Sitemap 1.0 -->
+</head>
+<body>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="">
+<param name="Local" value="prj.html">
+</object>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="Calendar">
+<param name="Local" value="Calendar.html">
+</object>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddDays">
+<param name="Local" value="Calendar.AddDays.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddHours">
+<param name="Local" value="Calendar.AddHours.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddMilliseconds">
+<param name="Local" value="Calendar.AddMilliseconds.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddMinutes">
+<param name="Local" value="Calendar.AddMinutes.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddMonths">
+<param name="Local" value="Calendar.AddMonths.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddSeconds">
+<param name="Local" value="Calendar.AddSeconds.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddWeeks">
+<param name="Local" value="Calendar.AddWeeks.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddYears">
+<param name="Local" value="Calendar.AddYears.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="CalendarWeekRule">
+<param name="Local" value="Calendar.CalendarWeekRule.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="Equals">
+<param name="Local" value="Calendar.Equals.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="Eras&nbsp;(get)">
+<param name="Local" value="Calendar.Get.Eras.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDayOfMonth">
+<param name="Local" value="Calendar.GetDayOfMonth.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDayOfWeek">
+<param name="Local" value="Calendar.GetDayOfWeek.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDayOfYear">
+<param name="Local" value="Calendar.GetDayOfYear.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDaysInMonth">
+<param name="Local" value="Calendar.GetDaysInMonth.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDaysInYear">
+<param name="Local" value="Calendar.GetDaysInYear.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetEra">
+<param name="Local" value="Calendar.GetEra.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetHashCode">
+<param name="Local" value="Calendar.GetHashCode.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetHour">
+<param name="Local" value="Calendar.GetHour.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetMilliseconds">
+<param name="Local" value="Calendar.GetMilliseconds.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetMinute">
+<param name="Local" value="Calendar.GetMinute.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetMonth">
+<param name="Local" value="Calendar.GetMonth.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetMonthsInYear">
+<param name="Local" value="Calendar.GetMonthsInYear.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetSecond">
+<param name="Local" value="Calendar.GetSecond.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetWeekOfYear">
+<param name="Local" value="Calendar.GetWeekOfYear.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetYear">
+<param name="Local" value="Calendar.GetYear.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="IsLeapDay">
+<param name="Local" value="Calendar.IsLeapDay.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="IsLeapMonth">
+<param name="Local" value="Calendar.IsLeapMonth.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="IsLeapYear">
+<param name="Local" value="Calendar.IsLeapYear.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="ToDateTime">
+<param name="Local" value="Calendar.ToDateTime.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="ToFourDigitYear">
+<param name="Local" value="Calendar.ToFourDigitYear.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="ToString">
+<param name="Local" value="Calendar.ToString.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="TwoDigitYearMax&nbsp;(get)">
+<param name="Local" value="Calendar.Get.TwoDigitYearMax.html">
+<param name="ImageNumber" value="11">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="TwoDigitYearMax&nbsp;(let)">
+<param name="Local" value="Calendar.Let.TwoDigitYearMax.html">
+<param name="ImageNumber" value="11">
+</object>
+</ul>
+</ul>
+</ul>
+</ul>
+</body>
+</html>

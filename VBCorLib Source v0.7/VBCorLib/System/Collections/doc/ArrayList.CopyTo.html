@@ -1,0 +1,143 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.23]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>ArrayList:&nbsp;CopyTo</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>ArrayList:&nbsp;CopyTo</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>CopyTo</H1>
+<P>
+ Copies all of the items to an array.
+
+<PRE class=syntax><B><font class="keyword">&nbsp;Public</font><font class="keyword">&nbsp;Sub</font><font class="identifier">&nbsp;CopyTo</font>(
+	&nbsp;<font class="keyword">&nbsp;ByRef</font><font class="identifier">&nbsp;dstArray</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Variant</font>,
+	&nbsp;<font class="keyword">&nbsp;Optional</font><font class="keyword">&nbsp;ByRef</font><font class="identifier">&nbsp;arrayindex</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Variant</font>&nbsp;)</B></PRE>
+<H4>Parameters</H4>
+<DL>
+<DT><I>dstArray</I></TD>
+<DD>
+[ByRef]
+ <B>Variant</B>.
+  The array to copy the items to.
+ 
+</DD>
+<DT><I>arrayindex</I></TD>
+<DD>
+[ByRef]
+ Optional.
+ <B>Variant</B>.
+   The index to start copying items to in the destination array.
+ 
+</DD>
+</DL>
+<H4>Remarks</H4>
+<P> The destination array must be large enough to hold all of the items. If an
+ arrayindex is specified, then the destination array must be large enough to hold all of
+ the items from that index on.
+ 
+<h4>Exceptions</h4>
+<table>
+<tr><th width="50%">Exception Type</th><th>Condition</th></tr>
+<tr>
+<td>ArgumentNullException</td><td>The destination array is a null array.</td>
+</tr>
+<tr>
+<td>ArgumentException</td><td><i>dstArray</i> is Multi-Dimension.<br>
+- or -<br>
+The number of elements in the <b>ArrayList</b> is greater than the
+destination array can contain.</td>
+</tr>
+<tr>
+<td>InvalidCastException</td><td>Elements in the <b>ArrayList</b> cannot be
+converted to a compatible datatype of the <i>dstArray</i>.</td>
+</tr>
+</table>
+<h4>Example</h4>
+This example shows how to copy elements from an <b>ArrayList</b> into an
+existing array, replacing any elements in the destination array.
+<pre>
+Private Sub Main()
+
+    ' Create our initial story in a regular String array.
+    Dim story() As String
+    story = cArray.NewArray(ciString, "Humpty", "Dumpty", "sat", "on", "a", "wall.")
+    
+    ' Display the current story.
+    Console.WriteLine "The initial story is:"
+    PrintValues story
+    
+    ' Create a new story in an ArrayList.
+    Dim words As New ArrayList
+    words.Add "Peter"
+    words.Add "Rabbit"
+    words.Add "slept"
+    words.Add "under"
+    words.Add "a"
+    words.Add "tree."
+    
+    ' Copies the third word to same word location in the array.
+    words.CopyToEx 2, story, 2, 1
+    
+    ' Display the new story.
+    Console.WriteLine "The story with 'sat' substituted by 'slept' is:"
+    PrintValues story
+    
+    ' Copies the first two elements to the first
+    ' two elements in the array.
+    words.CopyToEx 0, story, 0, 2
+    
+    ' Display the story with the new name.
+    Console.WriteLine "The story with the name changed is:"
+    PrintValues story
+    
+    ' Increase the size of the story array.
+    ReDim Preserve story(0 To 11)
+    
+    ' Append the words to the end of the current story.
+    words.CopyTo story, 6
+    
+    ' Display the final story.
+    Console.WriteLine "The final story is:"
+    PrintValues story
+    
+    ' Wait for a user presses Return.
+    Console.ReadLine
+End Sub
+
+Private Sub PrintValues(ByRef s() As String)
+    Dim i As Long
+    
+    Console.WriteValue vbTab
+    For i = LBound(s) To UBound(s)
+        Console.WriteValue "{0} ", s(i)
+    Next i
+    Console.WriteLine
+End Sub
+
+' This code produces the following output.
+'
+' The initial story is:
+'     Humpty Dumpty sat on a wall.
+' The story with 'sat' substituted by 'slept' is:
+'     Humpty Dumpty slept on a wall.
+' The story with the name changed is:
+'     Peter Rabbit slept on a wall.
+' The final story is:
+'     Peter Rabbit slept on a wall. Peter Rabbit slept under a tree.
+</pre></P>
+<H4>See Also</H4>
+<P>
+<A HREF="ArrayList.html">Class ArrayList Overview</A>
+<DIV class=footer>Build on Sunday, March 06, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

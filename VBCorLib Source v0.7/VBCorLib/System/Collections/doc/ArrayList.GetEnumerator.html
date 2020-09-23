@@ -1,0 +1,119 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.23]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>ArrayList:&nbsp;GetEnumerator</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>ArrayList:&nbsp;GetEnumerator</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>GetEnumerator</H1>
+<P>
+ Returns an enumerator for an ArrayList.
+
+<PRE class=syntax><B><font class="keyword">&nbsp;Public</font><font class="keyword">&nbsp;Function</font><font class="identifier">&nbsp;GetEnumerator</font>(
+	&nbsp;<font class="keyword">&nbsp;Optional</font><font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;StartIndex</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Long</font>,
+	&nbsp;<font class="keyword">&nbsp;Optional</font><font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;vCount</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Variant</font>&nbsp;)<font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Object</font></B></PRE>
+<H4>Parameters</H4>
+<DL>
+<DT><I>StartIndex</I></TD>
+<DD>
+[ByVal]
+ Optional.
+ <B>Long</B>.
+   The index in the list to being enumeration.
+ 
+</DD>
+<DT><I>vCount</I></TD>
+<DD>
+[ByVal]
+ Optional.
+ <B>Variant</B>.
+   The number of items in the list to enumerate over.
+ 
+</DD>
+</DL>
+<H4>Return Values</H4>
+<B>Object</B>&nbsp;-&nbsp; An ArrayList enumerator
+ 
+<H4>Remarks</H4>
+<P> This enumerator can be used in For..Each loops. To access the optional
+ parameters, the GetEnumerator must be called instead of simply passing the object
+ to the For..Each. This allows for a portion of the list to be enumerated.
+  <h4>Example</h4>
+This example shows several methods of enumerating over an <b>ArrayList</b> object.
+<pre>
+Private Sub Main()
+    Dim list As New ArrayList
+    
+    list.Add "The"
+    list.Add "quick"
+    list.Add "brown"
+    list.Add "fox"
+    
+    ' Display the words using the standard For..Each method.
+    Console.WriteLine "Using For..Each"
+    IterateUsingForEach list
+    
+    ' Display the words using the enumerator manually.
+    Console.WriteLine "Using an Enumerator"
+    IterateUsingEnumerator list
+    
+    ' Display a subset of the list using For..Each.
+    Console.WriteLine "Itertate Subset"
+    IterateSubset list, 1, 2
+    
+End Sub
+
+Private Sub IterateUsingForEach(ByVal list As ArrayList)
+    Dim word As Variant
+    
+    For Each word In list
+        Console.WriteValue vbTab & word
+    Next word
+    Console.WriteLine
+End Sub
+
+Private Sub IterateUsingEnumerator(ByVal list As ArrayList)
+    Dim en As IEnumerator
+    
+    Set en = list.GetEnumerator
+    Do While en.MoveNext
+        Console.WriteValue vbTab & en.Current
+    Loop
+    Console.WriteLine
+End Sub
+
+Private Sub IterateSubset(ByVal list As ArrayList, ByVal StartIndex As Long, ByVal Count As Long)
+    Dim word As Variant
+    
+    For Each word In list.GetEnumerator(StartIndex, Count)
+        Console.WriteLine "word is {0}", word
+    Next word
+End Sub
+
+' The following output is produced by this code.
+'
+' Using For..Each
+'     The    quick    brown    fox
+' Using an Enumerator
+'     The    quick    brown    fox
+' Iterate Subset
+' word is quick
+' word is brown
+</pre>
+</P>
+<H4>See Also</H4>
+<P>
+<A HREF="ArrayList.html">Class ArrayList Overview</A>
+<DIV class=footer>Build on Sunday, March 06, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>
