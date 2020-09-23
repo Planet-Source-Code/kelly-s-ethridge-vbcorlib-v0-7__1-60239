@@ -1,0 +1,192 @@
+<!doctype html public "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.23]" >
+</head>
+<body>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="">
+<param name="Name" value="">
+<param name="Local" value="prj.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="Calendar">
+<param name="Name" value="Calendar">
+<param name="Local" value="Calendar.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddDays">
+<param name="Name" value="AddDays">
+<param name="Local" value="Calendar.AddDays.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddHours">
+<param name="Name" value="AddHours">
+<param name="Local" value="Calendar.AddHours.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddMilliseconds">
+<param name="Name" value="AddMilliseconds">
+<param name="Local" value="Calendar.AddMilliseconds.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddMinutes">
+<param name="Name" value="AddMinutes">
+<param name="Local" value="Calendar.AddMinutes.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddMonths">
+<param name="Name" value="AddMonths">
+<param name="Local" value="Calendar.AddMonths.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddSeconds">
+<param name="Name" value="AddSeconds">
+<param name="Local" value="Calendar.AddSeconds.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddWeeks">
+<param name="Name" value="AddWeeks">
+<param name="Local" value="Calendar.AddWeeks.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="AddYears">
+<param name="Name" value="AddYears">
+<param name="Local" value="Calendar.AddYears.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="CalendarWeekRule">
+<param name="Name" value="CalendarWeekRule">
+<param name="Local" value="Calendar.CalendarWeekRule.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="Equals">
+<param name="Name" value="Equals">
+<param name="Local" value="Calendar.Equals.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="Eras">
+<param name="Name" value="Eras">
+<param name="Local" value="Calendar.Get.Eras.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDayOfMonth">
+<param name="Name" value="GetDayOfMonth">
+<param name="Local" value="Calendar.GetDayOfMonth.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDayOfWeek">
+<param name="Name" value="GetDayOfWeek">
+<param name="Local" value="Calendar.GetDayOfWeek.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDayOfYear">
+<param name="Name" value="GetDayOfYear">
+<param name="Local" value="Calendar.GetDayOfYear.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDaysInMonth">
+<param name="Name" value="GetDaysInMonth">
+<param name="Local" value="Calendar.GetDaysInMonth.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetDaysInYear">
+<param name="Name" value="GetDaysInYear">
+<param name="Local" value="Calendar.GetDaysInYear.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetEra">
+<param name="Name" value="GetEra">
+<param name="Local" value="Calendar.GetEra.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetHashCode">
+<param name="Name" value="GetHashCode">
+<param name="Local" value="Calendar.GetHashCode.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetHour">
+<param name="Name" value="GetHour">
+<param name="Local" value="Calendar.GetHour.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetMilliseconds">
+<param name="Name" value="GetMilliseconds">
+<param name="Local" value="Calendar.GetMilliseconds.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetMinute">
+<param name="Name" value="GetMinute">
+<param name="Local" value="Calendar.GetMinute.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetMonth">
+<param name="Name" value="GetMonth">
+<param name="Local" value="Calendar.GetMonth.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetMonthsInYear">
+<param name="Name" value="GetMonthsInYear">
+<param name="Local" value="Calendar.GetMonthsInYear.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetSecond">
+<param name="Name" value="GetSecond">
+<param name="Local" value="Calendar.GetSecond.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetWeekOfYear">
+<param name="Name" value="GetWeekOfYear">
+<param name="Local" value="Calendar.GetWeekOfYear.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="GetYear">
+<param name="Name" value="GetYear">
+<param name="Local" value="Calendar.GetYear.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="IsLeapDay">
+<param name="Name" value="IsLeapDay">
+<param name="Local" value="Calendar.IsLeapDay.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="IsLeapMonth">
+<param name="Name" value="IsLeapMonth">
+<param name="Local" value="Calendar.IsLeapMonth.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="IsLeapYear">
+<param name="Name" value="IsLeapYear">
+<param name="Local" value="Calendar.IsLeapYear.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="ToDateTime">
+<param name="Name" value="ToDateTime">
+<param name="Local" value="Calendar.ToDateTime.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="ToFourDigitYear">
+<param name="Name" value="ToFourDigitYear">
+<param name="Local" value="Calendar.ToFourDigitYear.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="ToString">
+<param name="Name" value="ToString">
+<param name="Local" value="Calendar.ToString.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="TwoDigitYearMax">
+<param name="Name" value="TwoDigitYearMax">
+<param name="Local" value="Calendar.Get.TwoDigitYearMax.html">
+</object>
+<li> <object type="text/sitemap">
+<param name="Name" value="TwoDigitYearMax">
+<param name="Name" value="TwoDigitYearMax">
+<param name="Local" value="Calendar.Let.TwoDigitYearMax.html">
+</object>
+</ul>
+</body>
+</html>

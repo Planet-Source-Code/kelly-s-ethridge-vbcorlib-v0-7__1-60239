@@ -1,0 +1,87 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.22]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>MemoryStream:&nbsp;BeginRead</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>MemoryStream:&nbsp;BeginRead</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>BeginRead</H1>
+<P>
+ Begins an asynchronous buffer read. For a MemoryStream, calling an asynchronous buffer
+ read is identical to calling ReadBlock.
+
+<PRE class=syntax><B><font class="keyword">&nbsp;Public</font><font class="keyword">&nbsp;Function</font><font class="identifier">&nbsp;BeginRead</font>(
+	&nbsp;<font class="keyword">&nbsp;ByRef</font><font class="identifier">&nbsp;Buffer</font>&nbsp;(&nbsp;)<font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Byte</font>,
+	&nbsp;<font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;Offset</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Long</font>,
+	&nbsp;<font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;Count</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Long</font>,
+	&nbsp;<font class="keyword">&nbsp;Optional</font><font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;Callback</font><font class="keyword">&nbsp;As</font><font class="identifier">&nbsp;AsyncCallback</font>,
+	&nbsp;<font class="keyword">&nbsp;Optional</font><font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;State</font><font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Variant</font>&nbsp;)<font class="keyword">&nbsp;As</font><font class="identifier">&nbsp;IAsyncResult</font></B></PRE>
+<H4>Parameters</H4>
+<DL>
+<DT><I>Buffer</I></TD>
+<DD>
+[ByRef]
+ <B>Byte</B>.
+  The destination array to copy the bytes into.
+ 
+</DD>
+<DT><I>Offset</I></TD>
+<DD>
+[ByVal]
+ <B>Long</B>.
+  The index in Buffer to begin copying to.
+ 
+</DD>
+<DT><I>Count</I></TD>
+<DD>
+[ByVal]
+ <B>Long</B>.
+  The maximum number of bytes to copy.
+ 
+</DD>
+<DT><I>Callback</I></TD>
+<DD>
+[ByVal]
+ Optional.
+ <B>AsyncCallback</B>.
+  A listening object to be notified that the read is finished.
+ 
+</DD>
+<DT><I>State</I></TD>
+<DD>
+[ByVal]
+ Optional.
+ <B>Variant</B>.
+  User data that can be carried within the IAsyncResult object returned.
+ 
+</DD>
+</DL>
+<H4>Return Values</H4>
+<B>IAsyncResult</B>&nbsp;-&nbsp; An IAsyncResult object used to identify the corrisponding Endread and report
+ information about the buffer read.
+ 
+<H4>Remarks</H4>
+<P> <p>Since the stream is directly stored and accessed in memory, there is no
+ waiting for reads to occur. The BeginRead method works identical to the Read method
+ in terms of immediately reading stream data into the <i>Buffer</i>.</p>
+ <p>When defining the Count for the number of maximum bytes to be read, if the
+ stream does not have enough bytes, the read will copy less bytes than Count.</p>
+ <p>If an exception has occured during the read, it will not be thrown until the
+ EndRead is executed.
+</P>
+<H4>See Also</H4>
+<P>
+<A HREF="MemoryStream.html">Class MemoryStream Overview</A>
+<DIV class=footer>Build on Thursday, February 10, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

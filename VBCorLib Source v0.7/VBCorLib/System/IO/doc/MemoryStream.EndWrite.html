@@ -1,0 +1,47 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.22]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>MemoryStream:&nbsp;EndWrite</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>MemoryStream:&nbsp;EndWrite</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>EndWrite</H1>
+<P>
+ Signifies the end of an asynchronous write to the stream.
+
+<PRE class=syntax><B><font class="keyword">&nbsp;Public</font><font class="keyword">&nbsp;Sub</font><font class="identifier">&nbsp;EndWrite</font>(
+	&nbsp;<font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;AsyncResult</font><font class="keyword">&nbsp;As</font><font class="identifier">&nbsp;IAsyncResult</font>&nbsp;)</B></PRE>
+<H4>Parameters</H4>
+<DL>
+<DT><I>AsyncResult</I></TD>
+<DD>
+[ByVal]
+ <B>IAsyncResult</B>.
+  The IAsyncResult returned from the BeginWrite function.
+ 
+</DD>
+</DL>
+<H4>Remarks</H4>
+<P> <p>This method is generally called anytime after BeginWrite for a MemoryStream.
+ Since the MemoryStream uses memory for the data store, there is no need to wait for
+ the data to be written. The BeginWrite/EndWrite calls are redundant and should not be
+ used with the MemoryStream. Instead use the WriteBlock Method.</p>
+ <p>If any exceptions were caused during the reading then they will be thrown
+ during the call to EndRead.</p>
+</P>
+<H4>See Also</H4>
+<P>
+<A HREF="MemoryStream.html">Class MemoryStream Overview</A>
+<DIV class=footer>Build on Thursday, February 10, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

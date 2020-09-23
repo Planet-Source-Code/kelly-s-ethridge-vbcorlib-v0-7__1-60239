@@ -1,0 +1,116 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.22]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>MemoryStream</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>MemoryStream</TD></TR>
+</TABLE>
+<!-- ============ MODULE ============ -->
+<h2>MemoryStream</h2>
+<br>
+ Provides an in-memory stream of data that can be read/written and modified
+ using Stream methods.<P> <h4>Remarks</h4> <p>The MemoryStream uses an array of bytes to back the data
+ in memory. When the object is first created, no array is allocated until the
+ first time the data must be accessed. The default capacity of the array is 4096 bytes.
+ The capacity will grow by doubling the size of the current capacity.
+ If The capacity needs to be larger, consider setting the Capacity directly to prevent
+ the array from having to be resized as new data is written to the stream.</p>
+ <p>If the MemoryStream is created using a supplied Byte array, then no internal array
+ will be allocated. The MemoryStream will access the supplied Byte array as if it
+ were created by the MemoryStream object. As the underlying array is modified, the
+ changes can be seen by directly accessing the array. Also, by modifying the array
+ directly, the underlying stream will reflect the new data.</p>
+ <p><b>CAUTION:</b> If a Byte array is being supplied to the MemoryStream, then the
+ array must outlive the MemoryStream object. It is the responsibility of the user to
+ destroy the array after the stream has been destroyed. The MemoryStream object
+ maintains a reference to the same array in memory, but does not deallocate the
+ array when finished. While the object is alive, the array is locked to prevent
+ it from being ReDimed or Erased. Closing the stream will release the lock and
+ reference to the array, at which point the user has full control of the array.</p>
+ <p>The Currency datatypes used are there for consistency across all stream objects.
+ Internally, the MemoryStream only supports 2 ^ 31 bytes. Other streams may support more.</p><P> <br><h4>Constructors:</h4><p>
+ <font face="Courier New">
+ Set obj = New MemoryStream<br>
+ Set obj = NewMemoryStream(ByteArray, [Index], [Count])
+ Set obj = Cor.NewMemoryStream(ByteArray, [Index], [Count])
+ </font><br></p>
+<H4>See Also</H4>
+<P>
+</P>
+<!-- ============ INHERITS ============ -->
+<!-- ============ IMPLEMENTS ============ -->
+<h3><a name="implements"></a>Implements:</h3><table cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="30%">cObject</td><td width="70%">&nbsp;</td></tr><tr valign="top"><td width="30%">Stream</td><td width="70%">&nbsp;</td></tr>
+</table>
+<!-- ============ cObject ============ -->
+<!-- ============ Stream ============ -->
+<!-- ============ PUBLIC ============ -->
+<h3><a name="public"></a>Public:</h3><!-- ============ PROPERTIES ============ -->
+<h4><a name="public_props"></a>Properties:</h4><table><thead><tr valign="top"><th align="left" width="48%">Name</th><th align="left" width="52%">Description</th></tr></thead><tbody><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Get.CanRead.html">CanRead</a>&nbsp;(get)</td><td width="52%">
+ Determines if the current MemoryStream can be read.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Get.CanSeek.html">CanSeek</a>&nbsp;(get)</td><td width="52%">
+ Determines if the current MemoryStream can seek positions within the stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Get.CanWrite.html">CanWrite</a>&nbsp;(get)</td><td width="52%">
+ Determines if the current MemoryStream can be written to.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Get.capacity.html">capacity</a>&nbsp;(get)</td><td width="52%">
+ Returns the current capacity of the internal stream buffer.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Let.capacity.html">capacity</a>&nbsp;(let)</td><td width="52%">
+ Sets the current capacity for the internal stream buffer.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Get.Length.html">Length</a>&nbsp;(get)</td><td width="52%">
+ Returns the current length of the stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Get.Position.html">Position</a>&nbsp;(get)</td><td width="52%">
+ Returns the current position within the stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Let.Position.html">Position</a>&nbsp;(let)</td><td width="52%">
+ Sets the current position within the stream.
+&nbsp;</td></tr></tbody></table>
+<!-- ============ METHODS ============ -->
+<h4><a name="public_methods"></a>Methods:</h4><table><thead><tr valign="top"><th align="left" width="48%">Name</th><th align="left" width="52%">Description</th></tr></thead><tbody><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.BeginRead.html">BeginRead</a></td><td width="52%">
+ Begins an asynchronous buffer read. For a MemoryStream, calling an asynchronous buffer
+ read is identical to calling ReadBlock.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.BeginWrite.html">BeginWrite</a></td><td width="52%">
+ Begins an asynchronous buffer write. For a MemoryStream, having an asynchronous buffer
+ write is of no use.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.CloseStream.html">CloseStream</a></td><td width="52%">
+ Closes the MemoryStream and releases any resources allocated.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.EndRead.html">EndRead</a></td><td width="52%">
+ Signifies the end of an asynchronous read from the stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.EndWrite.html">EndWrite</a></td><td width="52%">
+ Signifies the end of an asynchronous write to the stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Equals.html">Equals</a></td><td width="52%">
+ Returns a boolean indicating if the value and this object
+ instance are the same instance.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.Flush.html">Flush</a></td><td width="52%">
+ This has no purpose in a MemoryStream&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.GetHashCode.html">GetHashCode</a></td><td width="52%">
+ Returns a pseudo-unique number identifying this instance.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.ReadBlock.html">ReadBlock</a></td><td width="52%">
+ Reads a specifiec number of bytes from the stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.ReadByte.html">ReadByte</a></td><td width="52%">
+ Reads a single byte from the stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.SeekPosition.html">SeekPosition</a></td><td width="52%">
+ Changes the position within the stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.SetLength.html">SetLength</a></td><td width="52%">
+ Sets the current length of the stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.ToArray.html">ToArray</a></td><td width="52%">
+ Returns a byte array copy of the underlying byte stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.ToString.html">ToString</a></td><td width="52%">
+ Returns a string representation of this object instance.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.WriteBlock.html">WriteBlock</a></td><td width="52%">
+ Writes an array of bytes to the underlying stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.WriteByte.html">WriteByte</a></td><td width="52%">
+ Writes a single byte to the underlying stream.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="MemoryStream.WriteTo.html">WriteTo</a></td><td width="52%">
+ Writes the underlying stream to another stream.
+&nbsp;</td></tr></tbody></table>
+<!-- ============ PRIVATE ============ -->
+<DIV class=footer>Build on Thursday, February 10, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.23]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>ArrayList</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>ArrayList</TD></TR>
+</TABLE>
+<!-- ============ MODULE ============ -->
+<h2>ArrayList</h2>
+<br>
+ A list that dynamically increases in size to hold a number of items.
+
+<H4>Remarks</H4>
+<P>
+ As new items are added to the list, the capacity will increase as necessary.
+ <p>The capacity of the list is the current number of elements in the internal-array.</p>
+ <p>To lower the capacity to save memory, use the TrimToSize method, or set Capacity directly.</p>
+ <p>The default capacity is 16. The Item index is zero based.</p>
+
+ </P>
+<H4>See Also</H4>
+<P>
+| Constructors
+| ArrayListStatic
+| IList
+</P>
+<!-- ============ INHERITS ============ -->
+<!-- ============ IMPLEMENTS ============ -->
+<h3><a name="implements"></a>Implements:</h3><table cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="30%">cObject</td><td width="70%">&nbsp;</td></tr><tr valign="top"><td width="30%">ICloneable</td><td width="70%">&nbsp;</td></tr><tr valign="top"><td width="30%">ICollection</td><td width="70%">&nbsp;</td></tr><tr valign="top"><td width="30%">IEnumerable</td><td width="70%">&nbsp;</td></tr><tr valign="top"><td width="30%">IList</td><td width="70%">&nbsp;</td></tr>
+</table>
+<!-- ============ cObject ============ -->
+<!-- ============ ICloneable ============ -->
+<!-- ============ ICollection ============ -->
+<!-- ============ IEnumerable ============ -->
+<!-- ============ IList ============ -->
+<!-- ============ PUBLIC ============ -->
+<h3><a name="public"></a>Public:</h3><!-- ============ PROPERTIES ============ -->
+<h4><a name="public_props"></a>Properties:</h4><table><thead><tr valign="top"><th align="left" width="48%">Name</th><th align="left" width="52%">Description</th></tr></thead><tbody><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Get.capacity.html">capacity</a>&nbsp;(get)</td><td width="52%">
+ Returns the total number of elements in the the internal array.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Let.capacity.html">capacity</a>&nbsp;(let)</td><td width="52%">
+ Sets the number of allocated elements in the array.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Get.Count.html">Count</a>&nbsp;(get)</td><td width="52%">
+ Returns the number of items in the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Get.IsFixedSize.html">IsFixedSize</a>&nbsp;(get)</td><td width="52%">
+ Returns if the list is fixed-size.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Get.IsReadOnly.html">IsReadOnly</a>&nbsp;(get)</td><td width="52%">
+ Returns if the list is read-only.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Get.Item.html">Item</a>&nbsp;(get)</td><td width="52%">
+ Returns an item from the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Let.Item.html">Item</a>&nbsp;(let)</td><td width="52%">
+ Sets an item in the list to a value.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Set.Item.html">Item</a>&nbsp;(set)</td><td width="52%">
+ Sets an item in the list to a value.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Property.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Get.Version.html">Version</a>&nbsp;(get)</td><td width="52%">
+ Returns the current version of the instance.
+&nbsp;</td></tr></tbody></table>
+<!-- ============ METHODS ============ -->
+<h4><a name="public_methods"></a>Methods:</h4><table><thead><tr valign="top"><th align="left" width="48%">Name</th><th align="left" width="52%">Description</th></tr></thead><tbody><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Add.html">Add</a></td><td width="52%">
+ Adds a new item to the end of the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.AddRange.html">AddRange</a></td><td width="52%">
+ Adds the items from a collection to the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.BinarySearch.html">BinarySearch</a></td><td width="52%">
+ Performs a binary search for the value in the internal list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Clear.html">Clear</a></td><td width="52%">
+ Clears the list of all values.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Clone.html">Clone</a></td><td width="52%">
+ Returns an ArrayList object containing a copy of the array in
+ the original ArrayList.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Contains.html">Contains</a></td><td width="52%">
+ Returns if the list contains a specific value.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.CopyTo.html">CopyTo</a></td><td width="52%">
+ Copies all of the items to an array.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.CopyToEx.html">CopyToEx</a></td><td width="52%">
+ Copies a specified number of the items to an Array.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Equals.html">Equals</a></td><td width="52%">
+ Returns a boolean indicating if the value and this object
+ instance are the same instance.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.GetEnumerator.html">GetEnumerator</a></td><td width="52%">
+ Returns an enumerator for an ArrayList.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.GetHashCode.html">GetHashCode</a></td><td width="52%">
+ Returns a pseudo-unique number identifying this instance.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.GetRange.html">GetRange</a></td><td width="52%">
+ Returns an ArrayList object that is a windowed view into the original ArrayList.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.IndexOf.html">IndexOf</a></td><td width="52%">
+ Returns the index of the first occurrence of the value in the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Insert.html">Insert</a></td><td width="52%">
+ Inserts a value into the list at the specified index.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.InsertRange.html">InsertRange</a></td><td width="52%">
+ Inserts a collection of items into the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.LastIndexOf.html">LastIndexOf</a></td><td width="52%">
+ Returns the last occurrence of a value in the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Remove.html">Remove</a></td><td width="52%">
+ Removes a value from the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.RemoveAt.html">RemoveAt</a></td><td width="52%">
+ Removes a value from the list at a specific index.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.RemoveRange.html">RemoveRange</a></td><td width="52%">
+ Remove a set of items from the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Reverse.html">Reverse</a></td><td width="52%">
+ Reverses the list of items in the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.SetRange.html">SetRange</a></td><td width="52%">
+ Sets the items in the list to a collection of items.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.Sort.html">Sort</a></td><td width="52%">
+ Sorts the items in the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.ToArray.html">ToArray</a></td><td width="52%">
+ Returns an array of the items in the list.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Function.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.ToString.html">ToString</a></td><td width="52%">
+ Returns a string representation of this object instance.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><IMG src="Sub.gif" align="middle" border="0" alt=""></IMG>&nbsp;<a href="ArrayList.TrimToSize.html">TrimToSize</a></td><td width="52%">
+ Sets the capacity to the number of items in the list.
+&nbsp;</td></tr></tbody></table>
+<!-- ============ PRIVATE ============ -->
+<DIV class=footer>Build on Sunday, March 06, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

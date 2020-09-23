@@ -1,0 +1,51 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "m.stamenov" >
+  <meta name="GENERATOR" content="VBDOX [2.0.23]" >
+  <link REL="stylesheet" TYPE="text/css" HREF="backsdk4.css">
+  <script SRC="langref.js"></script>
+  <title>ArrayList:&nbsp;ToArray</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>ArrayList:&nbsp;ToArray</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>ToArray</H1>
+<P>
+ Returns an array of the items in the list.
+
+<PRE class=syntax><B><font class="keyword">&nbsp;Public</font><font class="keyword">&nbsp;Function</font><font class="identifier">&nbsp;ToArray</font>(
+	&nbsp;<font class="keyword">&nbsp;Optional</font><font class="keyword">&nbsp;ByVal</font><font class="identifier">&nbsp;arraytype</font><font class="keyword">&nbsp;As</font><font class="identifier">&nbsp;ciArrayTypes</font>&nbsp;=<font class="identifier">&nbsp;ciVariant</font>&nbsp;)<font class="keyword">&nbsp;As</font><font class="keyword">&nbsp;Variant</font></B></PRE>
+<H4>Parameters</H4>
+<DL>
+<DT><I>arraytype</I></TD>
+<DD>
+[ByVal]
+ Optional.
+ <B>ciArrayTypes</B>.
+  The specific array type to return.
+ 
+&nbsp;<P><B>Default:</B>  ciVariant</P>
+</DD>
+</DL>
+<H4>Return Values</H4>
+<B>Variant</B>&nbsp;-&nbsp; An array of items in the list.
+ 
+<H4>Remarks</H4>
+<P> <p>If an array type other than variant is specified, then the
+ list attempts to convert each item in the list to the specific array type
+ requested. If an item cannot be converted, then an exception is thrown.</p>
+ <p>No items will be narrowed in the conversion. For example, a Double will
+ not be converted to a Long. An exception will be thrown.</p>
+</P>
+<H4>See Also</H4>
+<P>
+<A HREF="ArrayList.html">Class ArrayList Overview</A>
+<DIV class=footer>Build on Sunday, March 06, 2005 by Kelly Ethridge<BR>Copyright &copy; 2004 ABB MC</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>
